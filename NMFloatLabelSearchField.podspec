@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NMFloatLabelSearchField'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'A lightweight subclass of UITextField to display floating hints and suggestion list as you type.'
 
 # This description is used to generate tags and improve search results.
@@ -21,19 +21,19 @@ Pod::Spec.new do |s|
 A lightweight subclass of SkyFloatingLabelTextField to display dynamic floating hints and suggestion list as you type text in the text field. Combination of https://github.com/Skyscanner/SkyFloatingLabelTextField and https://github.com/apasccon/SearchTextField pods.
                        DESC
 
-  s.homepage         = 'https://github.com/namshi/NMFloatLabelSearchField'
-  s.screenshots      = 'https://github.com/namshi/NMFloatLabelSearchField/blob/master/Screenshots/NMFloatLabelSearchField_1.0.0.gif'
+  s.homepage         = 'https://github.com/abhisekmallik/NMFloatLabelSearchField'
+  s.screenshots      = 'https://github.com/abhisekmallik/NMFloatLabelSearchField/blob/master/Screenshots/NMFloatLabelSearchField_1.0.0.gif'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Namshi General Trading L.L.C' => 'mobile-dev@namshi.com' }
-  s.source           = { :git => 'https://github.com/namshi/NMFloatLabelSearchField.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/abhisekmallik/NMFloatLabelSearchField.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/namshidotcom'
 
-  s.ios.deployment_target = '8.0'
-  s.swift_version = '4.1'
+  s.ios.deployment_target = '9.3'
+  s.swift_version = '4.2'
 
   s.source_files = 'NMFloatLabelSearchField/Classes/**/*'
 
   s.frameworks = 'UIKit'
-  s.dependency 'SkyFloatingLabelTextField', '~> 3.4.0'
+  s.dependency 'SkyFloatingLabelTextField'
 
 end
